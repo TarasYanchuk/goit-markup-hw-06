@@ -343,6 +343,51 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <div class="form-field">
+          <label class="input-text">
+            Им'я
+            <input type="text"
+          class="modal-input"
+          placeholder=" "
+          name="user-name"
+          id="user-name">
+          </label>
+          </div>
+          <div class="form-field">
+          <label class="input-text">
+            Телефон
+          <input type="text"
+          class="modal-input"
+          placeholder=" "
+          name="user-tel"
+          id="user-tel"
+          required>
+          </label>
+          </div>
+          <div class="form-field">
+          <label class="input-text">
+            Почта
+          <input type="text"
+          class="modal-input"
+          placeholder=" "
+          name="user-mail"
+          id="user-mail"
+          required>
+          </label>
+          </div>
+          <div class="form-field">
+          <label class="input-text">
+            Комментарий
+            <textarea
+            class="modal-text" 
+            name="комментарий"
+            placeholder="Введите текст"></textarea>
+          </label>
+          </div>
+        <button class="submit-button" type="submit">Отправить</button>
+        </form>
         <button type="button" class="modal-button" data-modal-close>
           <svg class="icon-close" width="10" height="10">
             <use href="./images/sprite.svg#icon-close"></use>
