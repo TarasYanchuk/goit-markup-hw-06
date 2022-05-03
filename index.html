@@ -356,7 +356,7 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
           <div class="form-field">
-          <label for="name" class="input-text"> Им'я</label>
+          <label for="user-name" class="input-text"> Им'я</label>
           <div class="input-field"><input type="text"
           class="modal-input"
           placeholder=" "
@@ -369,7 +369,7 @@
           </div>
           </div>
           <div class="form-field">
-          <label class="input-text">
+          <label class="input-text" for="user-tel">
             Телефон
           </label>
           <div class="input-field">
@@ -385,7 +385,7 @@
           </div>
         </div>
           <div class="form-field">
-          <label class="input-text">
+          <label class="input-text" for="user-mail">
             Почта</label>
             <div class="input-field">
           <input type="text"
@@ -396,16 +396,17 @@
           required>
            <svg class="modal-icon" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-email"></use>
-          </svg></div>
+          </svg>
+        </div>
           </div>
           <div class="form-field">
-          <label class="input-text">
+          <label class="input-text" for="comment">
             Комментарий
-            <textarea
-            class="modal-text" 
-            name="комментарий"
-            placeholder="Введите текст"></textarea>
           </label>
+          <textarea
+            class="modal-text" 
+            name="comment"
+            placeholder="Введите текст"></textarea>
           </div>
           <div class="form-license">
             <input 
@@ -414,13 +415,14 @@
             id="modal-check"
             name="privacy-check">
             <label for="modal-check" class="modal-check-text">
-              <span>
-                <svg class="check-icon" width="16px" height="15px"></svg>
+              <span style="margin-right: 8px;">
+                <svg class="check-icon" width="16px" height="15px">
                 <use href="./images/sprite.svg#icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="license" href="./index.html" >Условия договора</a>
+              Соглашаюсь с рассылкой и принимаю&nbsp; 
+              <a class="license" href="./index.html">
+                Условия договора</a>
             </label>
           </div>
         <button class="submit-button" type="submit">Отправить</button>
