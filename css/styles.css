@@ -146,6 +146,9 @@ img {
   text-decoration: underline;
   color: var(--accent-text-color);
 }
+.license:hover {
+  text-decoration: none;
+}
 .modal-check-text span {
   width: 16px;
   height: 15px;
